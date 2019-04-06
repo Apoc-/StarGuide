@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba9fc4b2-df43-4e32-949a-de12d931262f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerMovementController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <marker date="1554412376451" expanded="true" signature="39:2366" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="99:2364" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="706:829" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="865:912" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="948:1294" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="1347:2358" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="1528:1610" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="1627:1710" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="1740:1821" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="1838:1920" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="1962:2041" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="2058:2138" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="2168:2249" ph="{...}" />
+                <marker date="1554412376451" expanded="true" signature="2266:2348" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/EnumHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding>
+                <marker date="1554411495049" expanded="true" signature="6:66" ph="..." />
+                <marker date="1554411495049" expanded="true" signature="82:253" ph="{...}" />
+                <marker date="1554411495049" expanded="true" signature="119:251" ph="{...}" />
+                <marker date="1554411495049" expanded="true" signature="178:245" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerInputController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding>
+                <marker date="1554412737682" expanded="false" signature="6:41" ph="..." />
+                <marker date="1554412737682" expanded="true" signature="62:693" ph="{...}" />
+                <marker date="1554412737682" expanded="true" signature="119:691" ph="{...}" />
+                <marker date="1554412737682" expanded="true" signature="155:685" ph="{...}" />
+                <marker date="1554412737682" expanded="true" signature="210:675" ph="{...}" />
+                <marker date="1554412737682" expanded="true" signature="359:661" ph="{...}" />
+                <marker date="1554412737682" expanded="true" signature="567:639" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/DoorBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1554485709974" expanded="false" signature="6:78" ph="..." />
+                <marker date="1554485709974" expanded="true" signature="122:296" ph="{...}" />
+                <marker date="1554485709974" expanded="true" signature="194:215" ph="{...}" />
+                <marker date="1554485709974" expanded="true" signature="273:294" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56D97623-D556-49FE-AEC4-09BBD2AEC743/5f/21e3ad8f/Physics2D.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16767">
+              <caret line="736" column="31" selection-start-line="736" selection-start-column="31" selection-end-line="736" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/Interactible.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding>
+                <marker date="1554411689907" expanded="true" signature="45:205" ph="{...}" />
+                <marker date="1554411689907" expanded="true" signature="148:203" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/TestInteractible.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <marker date="1554411708649" expanded="true" signature="45:209" ph="{...}" />
+                <marker date="1554411708649" expanded="true" signature="96:207" ph="{...}" />
+                <marker date="1554411708649" expanded="true" signature="144:201" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/MathHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <marker date="1553947587198" expanded="false" signature="6:48" ph="..." />
+                <marker date="1553947587198" expanded="true" signature="64:839" ph="{...}" />
+                <marker date="1553947587198" expanded="true" signature="101:837" ph="{...}" />
+                <marker date="1553947587198" expanded="true" signature="171:395" ph="/// Returns a random int between min (inclusive) and max (exclusive). ... " />
+                <marker date="1553947587198" expanded="true" signature="452:515" ph="{...}" />
+                <marker date="1553947587198" expanded="true" signature="533:716" ph="/// Returns a random int between 0 (inclusive) and max (exclusive). ... " />
+                <marker date="1553947587198" expanded="true" signature="764:822" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>deckId</find>
+      <find>turn</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/a7/71b6b26a/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3B4FFE2-E17E-4283-BBEF-CEF2D48FD491/f9/15910f76/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/0f/ba59bab9/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/44/870c5842/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/TestInteractible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/ListHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/0c/7f18e99d/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerMovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerInputController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56D97623-D556-49FE-AEC4-09BBD2AEC743/5f/21e3ad8f/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/02/91a99a84/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/DoorBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/Interactible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/79/63bc8745/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/EnumHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/11/0e4a93b5/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/ea/bdfe68bb/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/MathHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/3c/47173c5a/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/ef/8beaa202/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C621EEF-6860-4159-8259-C91077C52483/e9/05be7962/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/ShipDataModel/RoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/ShipDataModel/ShipData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/WorldDataModel/SectorData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/RoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/BridgeData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/EngineRoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ReadyRoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/World/SectorData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/World/WorldData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/BridgeData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/EngineRoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/ReadyRoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ShipTypeConfigurationData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ShipConfigurationData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/ShipConfigurationData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/BridgeConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/EngineRoomConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/ShipTileType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/DeckData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ShipData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/MathHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/ListHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ShipType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/CargoHoldConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/RoomType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/ShipConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/RoomConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/WorldManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/TileType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/TileSpriteProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/ShipBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/ShipBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/DeckBehavour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/ShipMapGeneratorAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldRenderer/WorldRenderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/RoomData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/TileBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/RoomBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/ShipGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/MapGenerator/ShipMapGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/MapGenerator/ShipMapGeneratorAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Generators/ShipGenerator/ShipConfigurationProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/PlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/PlayerMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/EnumHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerActionInputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/World/Interactible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/World/TestInteractible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerInputController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1440" />
+    <option name="height" value="780" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
+              <item name="Maps" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Behaviour" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Behaviour" type="1045f7f1:UnityExplorerNode" />
+              <item name="Player" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Behaviour" type="1045f7f1:UnityExplorerNode" />
+              <item name="World" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="DataModel" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Util" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1068">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="1068" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba9fc4b2-df43-4e32-949a-de12d931262f" name="Default Changelist" comment="" />
+      <created>1553787234350</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553787234350</updated>
+      <workItem from="1553787238852" duration="11805000" />
+      <workItem from="1553806864027" duration="989000" />
+      <workItem from="1553811193447" duration="31121000" />
+      <workItem from="1554045579505" duration="12304000" />
+      <workItem from="1554135416383" duration="17590000" />
+      <workItem from="1554198761752" duration="692000" />
+      <workItem from="1554383509372" duration="8133000" />
+      <workItem from="1554485782671" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="83233000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22643554" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Change Signature" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="this.Position" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/Maps/Ship.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldDataModel/ChunkData.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/ef/8beaa202/Vector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/0c/7f18e99d/Sprite.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3B4FFE2-E17E-4283-BBEF-CEF2D48FD491/f9/15910f76/Vector2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="408" column="11" selection-start-line="408" selection-start-column="11" selection-end-line="408" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/3c/47173c5a/StringBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="254" column="34" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C621EEF-6860-4159-8259-C91077C52483/e9/05be7962/Enumerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="1352" column="32" selection-start-line="1352" selection-start-column="32" selection-end-line="1352" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/0f/ba59bab9/IEnumerable`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/79/63bc8745/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="639" column="16" selection-start-line="639" selection-start-column="16" selection-end-line="639" selection-end-column="16" />
+          <folding>
+            <marker date="1553679173951" expanded="true" signature="0:300" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1553679173951" expanded="false" signature="308:422" ph="..." />
+            <marker date="1553679173951" expanded="true" signature="460:69570" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="465:771" ph="///Represents a strongly typed list of objects that can be accessed by index. Provides methods to search, sort, a ... " />
+            <marker date="1553679173951" expanded="true" signature="1058:69568" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="1503:1556" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="1562:1960" ph="///Initializes a new instance of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; class that is empty and h ... " />
+            <marker date="1553679173951" expanded="true" signature="2019:2307" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="2313:2796" ph="///Initializes a new instance of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; class that contains eleme ... " />
+            <marker date="1553679173951" expanded="true" signature="2868:3504" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="3064:3341" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="3128:3193" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="3206:3333" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="3352:3498" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="3510:4139" ph="///Gets or sets the total number of elements the internal data structure can hold without resizing. ... " />
+            <marker date="1553679173951" expanded="true" signature="4192:4850" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="4233:4284" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="4319:4844" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="4574:4778" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="4856:5094" ph="///Gets the number of elements contained in the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="5144:5234" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5185:5228" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5291:5376" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5332:5370" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5441:5526" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5482:5520" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5582:5667" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5623:5661" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5733:5818" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5774:5812" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5880:6106" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="5921:6100" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="6112:6584" ph="///Gets or sets the element at the specified index. ... " />
+            <marker date="1553679173951" expanded="true" signature="6642:7062" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="6683:6839" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="6874:7056" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7120:7265" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7328:7775" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7369:7422" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7457:7769" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7567:7622" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7662:7761" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="7781:8078" ph="///Adds an object to the end of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="8135:8299" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="8360:8671" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="8462:8506" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="8544:8636" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="8677:9279" ph="///Adds the elements of the specified collection to the end of the &lt;see cref=&quot;T:System.Collections.Generic.List`1 ... " />
+            <marker date="1553679173951" expanded="true" signature="9360:9420" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="9426:9714" ph="///Returns a read-only &lt;see cref=&quot;T:System.Collections.ObjectModel.ReadOnlyCollection`1&quot; /&gt; wrapper for the curre ... " />
+            <marker date="1553679173951" expanded="true" signature="9789:9858" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="9864:11858" ph="///Searches a range of elements in the sorted &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; for an element u ... " />
+            <marker date="1553679173951" expanded="true" signature="11968:12487" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="12493:13575" ph="///Searches the entire sorted &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; for an element using the default ... " />
+            <marker date="1553679173951" expanded="true" signature="13640:13726" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="13732:15160" ph="///Searches the entire sorted &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; for an element using the specifi ... " />
+            <marker date="1553679173951" expanded="true" signature="15248:15323" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="15486:15644" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="15518:15615" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="15650:16134" ph="///Determines whether an element is in the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="16196:16683" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="16235:16426" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="16300:16396" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="16555:16657" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="16750:16866" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="16872:17628" ph="///Converts the elements in the current &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; to another type, and r ... " />
+            <marker date="1553679173951" expanded="true" signature="17706:18071" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="18077:18893" ph="///Copies the entire &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; to a compatible one-dimensional array, st ... " />
+            <marker date="1553679173951" expanded="true" signature="18956:18997" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="19084:19482" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="19236:19327" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="19371:19476" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="19488:21166" ph="///Copies a range of elements from the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; to a compatible one-dim ... " />
+            <marker date="1553679173951" expanded="true" signature="21267:21483" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="21489:22588" ph="///Copies the entire &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; to a compatible one-dimensional array, st ... " />
+            <marker date="1553679173951" expanded="true" signature="22667:22760" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="22802:23066" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="23072:23771" ph="///Determines whether the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; contains elements that match the con ... " />
+            <marker date="1553679173951" expanded="true" signature="23843:23897" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="23903:24571" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the first  ... " />
+            <marker date="1553679173951" expanded="true" signature="24638:24921" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="24797:24889" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="24927:25566" ph="///Retrieves all the elements that match the conditions defined by the specified predicate. ... " />
+            <marker date="1553679173951" expanded="true" signature="25642:25966" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="25840:25938" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="25972:26661" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-b ... " />
+            <marker date="1553679173951" expanded="true" signature="26735:26798" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="26804:27868" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-b ... " />
+            <marker date="1553679173951" expanded="true" signature="27958:28043" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="28049:29438" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-b ... " />
+            <marker date="1553679173951" expanded="true" signature="29539:30194" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="30092:30171" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="30200:30866" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the last o ... " />
+            <marker date="1553679173951" expanded="true" signature="30937:31225" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="31101:31193" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="31231:31918" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-b ... " />
+            <marker date="1553679173951" expanded="true" signature="31996:32076" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="32082:33154" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-b ... " />
+            <marker date="1553679173951" expanded="true" signature="33248:33328" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="33334:34728" ph="///Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-b ... " />
+            <marker date="1553679173951" expanded="true" signature="34833:35692" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="34964:35140" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="35590:35669" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="35698:36312" ph="///Performs the specified action on each element of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="36383:36910" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="36916:37189" ph="///Returns an enumerator that iterates through the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="37264:37319" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="37399:37471" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="37545:37614" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="37620:38502" ph="///Creates a shallow copy of a range of elements in the source &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; ... " />
+            <marker date="1553679173951" expanded="true" signature="38581:39196" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="39202:39757" ph="///Searches for the specified object and returns the zero-based index of the first occurrence within the entire &lt; ... " />
+            <marker date="1553679173951" expanded="true" signature="39817:39894" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="39959:40071" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="40077:41115" ph="///Searches for the specified object and returns the zero-based index of the first occurrence within the range of ... " />
+            <marker date="1553679173951" expanded="true" signature="41186:41428" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="41434:42827" ph="///Searches for the specified object and returns the zero-based index of the first occurrence within the range of ... " />
+            <marker date="1553679173951" expanded="true" signature="42909:43312" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="43318:43911" ph="///Inserts an element into the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; at the specified index. ... " />
+            <marker date="1553679173951" expanded="true" signature="43982:44461" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="44537:44829" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="44639:44693" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="44731:44823" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="44835:45777" ph="///Inserts the elements of a collection into the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; at the specif ... " />
+            <marker date="1553679173951" expanded="true" signature="45872:47094" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="46235:46963" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="46298:46955" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="46529:46748" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="46763:46914" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="46974:47065" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="47100:47657" ph="///Searches for the specified object and returns the zero-based index of the last occurrence within the entire &lt;s ... " />
+            <marker date="1553679173951" expanded="true" signature="47721:47844" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="47850:48862" ph="///Searches for the specified object and returns the zero-based index of the last occurrence within the range of  ... " />
+            <marker date="1553679173951" expanded="true" signature="48937:49158" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="49164:50525" ph="///Searches for the specified object and returns the zero-based index of the last occurrence within the range of  ... " />
+            <marker date="1553679173951" expanded="true" signature="50611:51415" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="51421:52035" ph="///Removes the first occurrence of a specific object from the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="52095:52235" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="52300:52402" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="52408:52909" ph="///Removes all the elements that match the conditions defined by the specified predicate. ... " />
+            <marker date="1553679173951" expanded="true" signature="52983:53679" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="53307:53499" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="53685:54142" ph="///Removes the element at the specified index of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="54207:54538" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="54544:55236" ph="///Removes a range of elements from the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="55315:56065" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="56249:56296" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="56302:56969" ph="///Reverses the order of the elements in the specified range. ... " />
+            <marker date="1553679173951" expanded="true" signature="57044:57563" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="57569:58038" ph="///Sorts the elements in the entire &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; using the default comparer ... " />
+            <marker date="1553679173951" expanded="true" signature="58090:58155" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="58161:59210" ph="///Sorts the elements in the entire &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; using the specified compar ... " />
+            <marker date="1553679173951" expanded="true" signature="59283:59337" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="59343:60897" ph="///Sorts the elements in a range of elements in &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; using the spec ... " />
+            <marker date="1553679173951" expanded="true" signature="60992:61513" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="61519:62184" ph="///Sorts the elements in the entire &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; using the specified &lt;see c ... " />
+            <marker date="1553679173951" expanded="true" signature="62260:62524" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="62530:62775" ph="///Copies the elements of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; to a new array. ... " />
+            <marker date="1553679173951" expanded="true" signature="62829:62979" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="63222:63351" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="63357:64110" ph="///Determines whether every element in the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; matches the conditi ... " />
+            <marker date="1553679173951" expanded="true" signature="64186:64450" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="64345:64425" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="64507:64579" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="64691:66682" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="64801:64896" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="64920:65033" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="64940:65025" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65063:65170" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65083:65162" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65201:65275" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65302:65374" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65410:65496" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65549:65639" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65673:65757" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65804:65905" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="65958:66064" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66096:66309" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66116:66202" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66214:66301" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66343:66428" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66473:66557" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66596:66676" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="66911:69564" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="67063:67203" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="67390:67406" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="67414:67887" ph="///Advances the enumerator to the next element of the &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1553679173951" expanded="true" signature="67947:68211" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="68246:68518" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="68526:68750" ph="///Gets the element at the current position of the enumerator. ... " />
+            <marker date="1553679173951" expanded="true" signature="68804:68908" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="68849:68900" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="68973:69263" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="69018:69255" ph="{...}" />
+            <marker date="1553679173951" expanded="true" signature="69326:69558" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/ReadyRoomData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/EngineRoomData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/BridgeData.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/a7/71b6b26a/Random.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/ListHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <marker date="1553947714629" expanded="true" signature="6:83" ph="..." />
+            <marker date="1553947714629" expanded="true" signature="99:528" ph="{...}" />
+            <marker date="1553947714629" expanded="true" signature="136:526" ph="{...}" />
+            <marker date="1553947714629" expanded="true" signature="206:520" ph="{...}" />
+            <marker date="1553947714629" expanded="true" signature="279:484" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/RoomType.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ShipType.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/CargoHoldConfiguration.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/BridgeConfiguration.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/RoomConfiguration.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/44/870c5842/GameObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/MapGenerator/TileType.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/02/91a99a84/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27163">
+          <caret line="1185" column="10" selection-start-line="1185" selection-start-column="10" selection-end-line="1185" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/ShipBehaviour.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/Rooms/RoomData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/MapGenerator/TileSpriteProvider.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/ea/bdfe68bb/Boolean.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78121F72-672F-4A9B-8378-F38120B3DE75/11/0e4a93b5/Vector2Int.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="183" column="6" selection-start-line="183" selection-start-column="6" selection-end-line="183" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/MapGenerator/ShipMapGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/MapGenerator/ShipMapGeneratorAgent.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/DeckBehaviour.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/EngineRoomConfiguration.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/ShipGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/ShipConfiguration.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Generators/ShipGeneratorOld/ShipConfigurationProvider.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/TileBehaviour.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/DeckData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/RoomBehaviour.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/Ship/ShipData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/World/SectorData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataModel/World/WorldData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerMovementController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <marker date="1554412376451" expanded="true" signature="39:2366" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="99:2364" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="706:829" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="865:912" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="948:1294" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="1347:2358" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="1528:1610" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="1627:1710" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="1740:1821" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="1838:1920" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="1962:2041" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="2058:2138" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="2168:2249" ph="{...}" />
+            <marker date="1554412376451" expanded="true" signature="2266:2348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/EnumHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1554411495049" expanded="true" signature="6:66" ph="..." />
+            <marker date="1554411495049" expanded="true" signature="82:253" ph="{...}" />
+            <marker date="1554411495049" expanded="true" signature="119:251" ph="{...}" />
+            <marker date="1554411495049" expanded="true" signature="178:245" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56D97623-D556-49FE-AEC4-09BBD2AEC743/5f/21e3ad8f/Physics2D.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16767">
+          <caret line="736" column="31" selection-start-line="736" selection-start-column="31" selection-end-line="736" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/Interactible.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <marker date="1554411689907" expanded="true" signature="45:205" ph="{...}" />
+            <marker date="1554411689907" expanded="true" signature="148:203" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/TestInteractible.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <marker date="1554411708649" expanded="true" signature="45:209" ph="{...}" />
+            <marker date="1554411708649" expanded="true" signature="96:207" ph="{...}" />
+            <marker date="1554411708649" expanded="true" signature="144:201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/MathHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <marker date="1553947587198" expanded="false" signature="6:48" ph="..." />
+            <marker date="1553947587198" expanded="true" signature="64:839" ph="{...}" />
+            <marker date="1553947587198" expanded="true" signature="101:837" ph="{...}" />
+            <marker date="1553947587198" expanded="true" signature="171:395" ph="/// Returns a random int between min (inclusive) and max (exclusive). ... " />
+            <marker date="1553947587198" expanded="true" signature="452:515" ph="{...}" />
+            <marker date="1553947587198" expanded="true" signature="533:716" ph="/// Returns a random int between 0 (inclusive) and max (exclusive). ... " />
+            <marker date="1553947587198" expanded="true" signature="764:822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/Player/PlayerInputController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <marker date="1554412737682" expanded="false" signature="6:41" ph="..." />
+            <marker date="1554412737682" expanded="true" signature="62:693" ph="{...}" />
+            <marker date="1554412737682" expanded="true" signature="119:691" ph="{...}" />
+            <marker date="1554412737682" expanded="true" signature="155:685" ph="{...}" />
+            <marker date="1554412737682" expanded="true" signature="210:675" ph="{...}" />
+            <marker date="1554412737682" expanded="true" signature="359:661" ph="{...}" />
+            <marker date="1554412737682" expanded="true" signature="567:639" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviour/World/DoorBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554485709974" expanded="false" signature="6:78" ph="..." />
+            <marker date="1554485709974" expanded="true" signature="122:296" ph="{...}" />
+            <marker date="1554485709974" expanded="true" signature="194:215" ph="{...}" />
+            <marker date="1554485709974" expanded="true" signature="273:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
