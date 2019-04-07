@@ -41,12 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Walkable
+  - name: Background
     uniqueID: 2613336663
+    locked: 0
+  - name: Door
+    uniqueID: 4189093629
     locked: 0
   - name: Player
     uniqueID: 3818469479
     locked: 0
-  - name: Obscuring
+  - name: Foreground
     uniqueID: 742747947
     locked: 0
