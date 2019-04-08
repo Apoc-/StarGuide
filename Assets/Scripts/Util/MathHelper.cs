@@ -27,6 +27,11 @@ namespace Util
         {
             return _random.Next(max);
         }
+
+        public static float GetRandomFloat(float min, float max)
+        {
+            return (float)_random.NextDouble() * (max-min) + min;
+        }
         
     }
 }
