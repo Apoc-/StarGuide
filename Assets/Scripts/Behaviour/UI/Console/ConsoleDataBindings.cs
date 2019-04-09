@@ -18,7 +18,9 @@ namespace Behaviour.Console
         {
             var gs = GameManager.Instance.GameState;
             
-            _dataBindings.Add("position", () => gs.PlayerData.SpaceShip.Position.ToString());
+            _dataBindings.Add("navData", () => gs.PlayerData.SpaceShipData.GetNavigationDataString());
+            _dataBindings.Add("engine", () => gs.PlayerData.SpaceShipData.Engine.ToConsoleString());
+            _dataBindings.Add("heading", () => gs.PlayerData.SpaceShipData.Heading.ToString());
         }
 
         public string GetDatum(string datum)

@@ -6,5 +6,6 @@ namespace DataModel
     {
         public PlayerData PlayerData;
         public GalaxyData GalaxyData;
+        public bool Inialized { get; set; } = false;
     }
 }

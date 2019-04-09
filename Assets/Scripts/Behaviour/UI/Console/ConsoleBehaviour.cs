@@ -6,7 +6,6 @@ using UnityEngine;
 
 namespace Behaviour.Console
 {
-
     [RequireComponent(typeof(ConsoleCommandHandler))]
     public class ConsoleBehaviour : MonoBehaviour
     {
@@ -19,6 +18,7 @@ namespace Behaviour.Console
         public TextMeshProUGUI Screen;
         public TMP_FontAsset FontAsset;
         private ConsoleCommandHandler _consoleCommandHandler;
+        private Stack<string> _lineHistory = new Stack<string>();
 
         private void Start()
         {
@@ -27,7 +27,7 @@ namespace Behaviour.Console
                 .AddLine("Starting up...")
                 .AddLine("Welcome to Starship BOS!")
                 .AddEmptyLine();
-            
+
             _currentLineBuffer = "";
             ApplyCurrentLineBufferToScreenBuffer();
         }
@@ -43,7 +43,7 @@ namespace Behaviour.Console
             ApplyCurrentLineBufferToScreenBuffer();
             WriteBufferToScreen();
         }
-        
+
         private void ApplyCurrentLineBufferToScreenBuffer()
         {
             _screenBuffer.SetLastLine(_promptString + _currentLineBuffer + _inputCaret);
@@ -52,7 +52,7 @@ namespace Behaviour.Console
         private void WriteBufferToScreen()
         {
             //var lineBufferLines = (_currentLineBuffer.Length-1) /_maxLineLength;
-            
+
             Screen.text = _screenBuffer
                 .GetLastLines(_maxLines)
                 .SelectMany(s => s)
@@ -70,18 +70,18 @@ namespace Behaviour.Console
                 return;
             }
 
-            if (Input.GetKeyDown(KeyCode.F2))
-            {
-                GameManager.Instance.ToggleConsoleVisibility();
-                return;
-            }
-            
             if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
             {
                 HandleReturnInput();
                 return;
             }
             
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                HandleUpInput();
+                return;
+            }
+
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
                 HandleBackspaceInput();
@@ -89,6 +89,14 @@ namespace Behaviour.Console
             }
 
             HandleTextInput();
+        }
+
+        private void HandleUpInput()
+        {
+            if (_lineHistory.Count > 0)
+            {
+                _currentLineBuffer = _lineHistory.Pop();    
+            }
         }
 
         private void HandleTextInput()
@@ -99,7 +107,7 @@ namespace Behaviour.Console
         private void HandleBackspaceInput()
         {
             if (_currentLineBuffer.Length < 1) return;
-            
+
             _currentLineBuffer = _currentLineBuffer.Remove(_currentLineBuffer.Length - 1);
         }
 
@@ -111,11 +119,17 @@ namespace Behaviour.Console
             {
                 _screenBuffer
                     .DeleteCharFromLastLine()
-                    .AppendNewLineCharacter()
-                    .AddLine(EscapeString(answer))
-                    .AddEmptyLine();
+                    .AppendNewLineCharacter();
+
+                answer
+                    .Split('\n')
+                    .ToList()
+                    .ForEach(s => { _screenBuffer.AddLine(EscapeString(s)); });
+
+                _screenBuffer.AddEmptyLine();
             }
-            
+
+            _lineHistory.Push(_currentLineBuffer);
             _currentLineBuffer = "";
         }
 
@@ -124,7 +138,7 @@ namespace Behaviour.Console
             var escapedString = s;
 
             FontAsset.HasCharacters(s, out var missingChars);
-            
+
             foreach (var missingChar in missingChars)
             {
                 escapedString = escapedString.Replace(missingChar, ' ');

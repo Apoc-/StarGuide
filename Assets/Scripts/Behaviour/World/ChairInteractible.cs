@@ -23,6 +23,8 @@ namespace Behaviour.World
             
             map.SetTile(LeftTilePosition, 200);
             map.SetTile(RightTilePosition, 201);
+            
+            map.UpdateMesh();
         }
 
         public void HideBackrest()

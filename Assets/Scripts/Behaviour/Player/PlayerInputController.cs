@@ -29,12 +29,7 @@ namespace Behaviour
             _animController = GetComponent<Animator>();
             _rb = GetComponent<Rigidbody2D>();
         }
-
-        public void SetCanAct(bool state)
-        {
-            _isWorking = state;
-        }
-
+        
         private void Update()
         {
             if (!_isSitting && !_isWorking)

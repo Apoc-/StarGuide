@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DataModel;
 using TMPro;
 using UnityEngine;
 
@@ -24,7 +25,7 @@ namespace Behaviour.Console
             RegisterCommand(
                 new ConsoleCommand
                 {
-                    CommandName = "ech",
+                    CommandName = "echo",
                     MinParameterCount = 1,
                     CommandFunction = CmdEcho
                 });
@@ -32,19 +33,19 @@ namespace Behaviour.Console
             RegisterCommand(
                 new ConsoleCommand
                 {
-                    CommandName = "cls",
+                    CommandName = "clear",
                     MinParameterCount = 0,
                     CommandFunction = CmdCls
                 });
-            
+
             RegisterCommand(
                 new ConsoleCommand
                 {
-                    CommandName = "dat",
+                    CommandName = "data",
                     MinParameterCount = 1,
                     CommandFunction = CmdDta
                 });
-            
+
             RegisterCommand(
                 new ConsoleCommand
                 {
@@ -52,6 +53,60 @@ namespace Behaviour.Console
                     MinParameterCount = 1,
                     CommandFunction = CmdScan
                 });
+
+            RegisterCommand(
+                new ConsoleCommand
+                {
+                    CommandName = "plot",
+                    MinParameterCount = 3,
+                    CommandFunction = CmdPlot
+                });
+
+            RegisterCommand(
+                new ConsoleCommand
+                {
+                    CommandName = "start",
+                    MinParameterCount = 1,
+                    CommandFunction = CmdStart
+                });
+
+            RegisterCommand(
+                new ConsoleCommand
+                {
+                    CommandName = "stop",
+                    MinParameterCount = 1,
+                    CommandFunction = CmdStop
+                });
+        }
+
+        private string CmdStart(List<string> arg1, ConsoleBehaviour arg2)
+        {
+            var startables = GameManager.Instance.Startables;
+            var name = arg1[0];
+
+            if (!startables.ContainsKey(name)) return $"ERROR: Did not find {name}.";
+            
+            var startable = startables[name];
+            if (startable.IsRunning()) return $"WARN: {name} already running.";
+            
+            startable.Start();
+            
+            return $"Started {name}." ;
+        }
+
+        private string CmdStop(List<string> arg1, ConsoleBehaviour arg2)
+        {
+            var startables = GameManager.Instance.Startables;
+            var name = arg1[0];
+
+            if (!startables.ContainsKey(name)) return $"ERROR: Did not find {name}.";
+
+            var startable = startables[name];
+
+            if (!startable.IsRunning()) return $"WARN: {name} not running.";
+            startables[name].Stop();
+
+            return $"Stopped {name}." ;
         }
 
 
@@ -98,7 +153,7 @@ namespace Behaviour.Console
             console.ClearScreen();
             return "0";
         }
-        
+
         private string CmdDta(List<string> args, ConsoleBehaviour console)
         {
             var datumName = args[0];
@@ -107,12 +162,24 @@ namespace Behaviour.Console
 
             return _dataBindings.GetDatum(datumName);
         }
-        
+
         private string CmdScan(List<string> arg1, ConsoleBehaviour arg2)
         {
             var target = arg1[0];
 
             return "WIP";
+        }
+
+        private string CmdPlot(List<string> arg1, ConsoleBehaviour arg2)
+        {
+            var x = int.Parse(arg1[0]);
+            var y = int.Parse(arg1[1]);
+            var z = int.Parse(arg1[2]);
+            var target = new Vector3Int(x, y, z);
+
+            GameManager.Instance.GameState.PlayerData.SpaceShipData.Heading = target;
+
+            return "Plotted course to " + target;
         }
     }
 }

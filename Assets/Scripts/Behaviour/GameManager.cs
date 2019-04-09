@@ -1,56 +1,63 @@
-using Behaviour.Console;
+using System.Collections.Generic;
+using System.Linq;
 using Behaviour.Player;
 using CreativeSpore.SuperTilemapEditor;
 using DataModel;
+using SpaceShip;
 using UnityEngine;
 
 namespace Behaviour
 {
     public class GameManager : MonoBehaviour
     {
-        private static GameManager _instance;
-
-        public static GameManager Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = FindObjectOfType<GameManager>();
-                }
-                return _instance;
-            }
-        }
-
         public PlayerBehaviour Player;
         public TilemapGroup ShipTilemapGroup;
         public GameObject ConsoleComputer;
         public GameState GameState { get; private set; }
 
+        private List<ITickable> _tickables = new List<ITickable>();
+        public Dictionary<string, IStartable> Startables { get; } = new Dictionary<string, IStartable>();
+
         private void Start()
         {
             GameState = new GameState();
             
-            var spaceShip = new SpaceShip();
-            spaceShip.Name = "SGS Mijago";
-            spaceShip.Position = Vector3Int.zero;
-            spaceShip.Engine = new ShipEngine();
+            InitializeSpaceShip();
+            InitializeGalaxy();
+
+            RegisterTickables();
+            RegisterStartables();
             
-            var playerData = new PlayerData();
-            playerData.SpaceShip = spaceShip;
+            GameState.Inialized = true;
+        }
 
-            GameState.PlayerData = playerData;
+        private void RegisterStartables()
+        {
+            Startables.Add("engine", GameState.PlayerData.SpaceShipData.Engine);
+        }
 
+        private void RegisterTickables()
+        {
+            _tickables.Add(new SpaceShipTicker());
+        }
+
+        private void FixedUpdate()
+        {
+            if (!GameState.Inialized) return;
+            
+            _tickables.ForEach(tickable => tickable.Tick());
+        }
+
+        private void InitializeGalaxy()
+        {
             var galaxyData = new GalaxyData();
             galaxyData.Name = "Sefardim";
             
             var ssg = new StarSystemGenerator(galaxyData);
-            var starSystem = ssg.GenerateStarSystem(playerData.SpaceShip.Position);
+            var starSystem = ssg.GenerateStarSystem(GameState.PlayerData.SpaceShipData.GridPosition);
 
             galaxyData.StarSystems.Add(starSystem.Position, starSystem);
             GameState.GalaxyData = galaxyData;
-            
-            Debug.Log(GameState.GalaxyData);
         }
 
         public void DisableConsole()
@@ -64,10 +71,35 @@ namespace Behaviour
             ConsoleComputer.gameObject.SetActive(true);
         }
 
-        public void ToggleConsoleVisibility()
+        private void InitializeSpaceShip()
         {
-            var state = ConsoleComputer.gameObject.GetComponent<Canvas>().enabled;
-            ConsoleComputer.gameObject.GetComponent<Canvas>().enabled = !state;
+            var spaceShip = new SpaceShipData();
+            spaceShip.Name = "SGS Mijago";
+            spaceShip.GridPosition = Vector3Int.zero;
+            spaceShip.Position = spaceShip.GridPosition;
+            spaceShip.Engine = new ShipEngine();
+            
+            var playerData = new PlayerData();
+            playerData.SpaceShipData = spaceShip;
+
+            GameState.PlayerData = playerData;
         }
+        
+        #region singleton
+        private static GameManager _instance;
+
+        public static GameManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<GameManager>();
+                    DontDestroyOnLoad(_instance);
+                }
+                return _instance;
+            }
+        }
+        #endregion
     }
 }
