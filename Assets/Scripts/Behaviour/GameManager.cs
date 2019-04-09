@@ -1,4 +1,6 @@
+using Behaviour.Console;
 using Behaviour.Player;
+using CreativeSpore.SuperTilemapEditor;
 using DataModel;
 using UnityEngine;
 
@@ -21,21 +23,23 @@ namespace Behaviour
         }
 
         public PlayerBehaviour Player;
+        public TilemapGroup ShipTilemapGroup;
+        public GameObject ConsoleComputer;
+        public GameState GameState { get; private set; }
 
-        private GameState _gameState;
-        
         private void Start()
         {
-            _gameState = new GameState();
+            GameState = new GameState();
             
             var spaceShip = new SpaceShip();
             spaceShip.Name = "SGS Mijago";
             spaceShip.Position = Vector3Int.zero;
+            spaceShip.Engine = new ShipEngine();
             
             var playerData = new PlayerData();
             playerData.SpaceShip = spaceShip;
 
-            _gameState.PlayerData = playerData;
+            GameState.PlayerData = playerData;
 
             var galaxyData = new GalaxyData();
             galaxyData.Name = "Sefardim";
@@ -44,19 +48,26 @@ namespace Behaviour
             var starSystem = ssg.GenerateStarSystem(playerData.SpaceShip.Position);
 
             galaxyData.StarSystems.Add(starSystem.Position, starSystem);
-            _gameState.GalaxyData = galaxyData;
+            GameState.GalaxyData = galaxyData;
             
-            Debug.Log(_gameState.GalaxyData);
+            Debug.Log(GameState.GalaxyData);
+        }
 
+        public void DisableConsole()
+        {
+            ConsoleComputer.gameObject.SetActive(false);
+            Player.InputController.StopWorking();
+        }
 
-            /*Debug.Log("----------");
-            var pg = new PlanetGenerator(starSystem);
-            for (int i = 0; i < 10000; i++)
-            {
-                var p = pg.GeneratePlanet(PlanetSize.Small);
+        public void EnableConsole()
+        {
+            ConsoleComputer.gameObject.SetActive(true);
+        }
 
-                Debug.Log(p.Position);
-            }*/
+        public void ToggleConsoleVisibility()
+        {
+            var state = ConsoleComputer.gameObject.GetComponent<Canvas>().enabled;
+            ConsoleComputer.gameObject.GetComponent<Canvas>().enabled = !state;
         }
     }
 }

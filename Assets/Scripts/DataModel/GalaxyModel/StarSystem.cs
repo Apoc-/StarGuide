@@ -11,7 +11,7 @@ namespace DataModel
         public string Name;
         public List<Planet> Planets;
         public Vector3Int Position;
-        public float Diameter; //standard 1 LY
+        public float Diameter;
         public StarSystemConfiguration Configuration;
 
         public StarSystem(string name, Vector3Int position, float diameter)
@@ -33,6 +33,17 @@ namespace DataModel
                 .AppendFormat("Position: {0}\n", Position)
                 .AppendFormat("Diameter: {0} AU\n", Diameter)
                 .AppendFormat("Habitable Belt: {0} AU to {1} AU\n", belt.Item1, belt.Item2);
+
+            return stringBuilder.ToString();
+        }
+
+        public string ToDetailedString()
+        {
+            var stringBuilder = new StringBuilder();
+            var belt = Configuration.HabitableBeltDistances;
+
+            stringBuilder
+                .Append(ToString());
             
             Planets.ForEach(planet => { stringBuilder.AppendLine(planet.ToString()); });
 

@@ -18,38 +18,85 @@ namespace Behaviour
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Sit = Animator.StringToHash("Sit");
-        
+
         private bool _isSitting = false;
-        
+        private ChairInteractible currentChair;
+        private WorkInteractible currentWorkstation;
+        private bool _isWorking = false;
+
         void Start()
         {
             _animController = GetComponent<Animator>();
             _rb = GetComponent<Rigidbody2D>();
         }
 
+        public void SetCanAct(bool state)
+        {
+            _isWorking = state;
+        }
+
         private void Update()
         {
-            if (!_isSitting)
+            if (!_isSitting && !_isWorking)
             {
-                HandleMovementInput();    
+                HandleMovementInput();
             }
 
             if (Input.GetButtonDown("Fire1"))
             {
-                if(_isSitting) ToggleSitState();
-            }
-
-            if (Input.GetButtonDown("Fire1"))
-            {
-                HandleActivationInput();
+                if (_isSitting)
+                {
+                    StandUp();
+                }
+                else if (_isWorking)
+                {
+                    StopWorking();
+                }
+                else
+                {
+                    HandleActivationInput();
+                }
             }
         }
 
-        public void ToggleSitState()
+        public void SitDown(ChairInteractible chairInteractible)
         {
-            _isSitting = !_isSitting;
-            
+            currentChair = chairInteractible;
+
+            _isSitting = true;
+
             _animController.SetBool(Sit, _isSitting);
+            gameObject.transform.position = currentChair.transform.position;
+            GetComponent<Collider2D>().isTrigger = true;
+
+            StopPlayerMovement();
+        }
+
+        private void StandUp()
+        {
+            _isSitting = false;
+            _animController.SetBool(Sit, _isSitting);
+            _animController.Rebind();
+            _animController.SetBool(Up, true);
+            
+            var pos = transform.position;
+            var exitPos = new Vector3(pos.x, pos.y + 1, pos.z);
+            gameObject.transform.position = exitPos;
+
+            GetComponent<Collider2D>().isTrigger = false;
+
+            currentChair.HideBackrest();
+            currentChair = null;
+        }
+
+        private void StopPlayerMovement()
+        {
+            _rb.velocity = Vector2.zero;
+
+            _animController.SetBool(Right, false);
+            _animController.SetBool(Left, false);
+            _animController.SetBool(Up, false);
+            _animController.SetBool(Down, false);
         }
 
         private void HandleMovementInput()
@@ -88,7 +135,6 @@ namespace Behaviour
 
         private bool HasStateName(AnimatorStateInfo stateInfo, string name)
         {
-            
             return stateInfo.shortNameHash == Animator.StringToHash(name);
         }
 
@@ -172,6 +218,20 @@ namespace Behaviour
             {
                 _animController.SetBool(Left, false);
             }
+        }
+
+        public void StartWorking(WorkInteractible workInteractible)
+        {
+            currentWorkstation = workInteractible;
+
+            _isWorking = true;
+            StopPlayerMovement();
+        }
+
+        public void StopWorking()
+        {
+            _isWorking = false;
+            currentWorkstation = null;
         }
     }
 }

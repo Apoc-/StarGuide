@@ -1,12 +1,13 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Behaviour.World
 {
-    public class CaptainsChairInteractible : Interactible
-    {
+    public class WorkInteractible: Interactible
+    {        
         public override void OnInteract(PlayerInputController playerInputController)
         {
-            playerInputController.ToggleSitState();
+            playerInputController.StartWorking(this);
         }
     }
 }

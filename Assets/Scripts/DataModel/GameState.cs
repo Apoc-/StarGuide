@@ -6,7 +6,5 @@ namespace DataModel
     {
         public PlayerData PlayerData;
         public GalaxyData GalaxyData;
-
-        
     }
 }

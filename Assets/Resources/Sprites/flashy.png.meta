@@ -19,6 +19,11 @@ TextureImporter:
     21300028: flashy_14
     21300030: flashy_15
     21300032: flashy_16
+    21300034: flashy_17
+    21300036: flashy_18
+    21300038: flashy_19
+    21300040: flashy_20
+    21300042: flashy_21
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -137,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9c54fbac0cc298458278c4b0d43145a
+      spriteID: 42a54bde4fcc9a842ba66e7ab1436569
       vertices: []
       indices: 
       edges: []
@@ -157,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a82a8257d0a6634c8311b200f8580b0
+      spriteID: 3463b7db16b503a44b5ebfa3a161d11e
       vertices: []
       indices: 
       edges: []
@@ -177,7 +182,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30230b0b519ce9c4bb07e20d16fe01bd
+      spriteID: a19d8497c5431034cad5ac9448afe1b8
       vertices: []
       indices: 
       edges: []
@@ -197,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646590d4cf25f4047babadf226071a33
+      spriteID: 8ebe53dae58781a41939d8b3081d88c4
       vertices: []
       indices: 
       edges: []
@@ -217,7 +222,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a937454bcaca864cab7430bc9088c2d
+      spriteID: 82f8a3cb01c27a245b1d60d263afef68
       vertices: []
       indices: 
       edges: []
@@ -237,7 +242,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8220bfa235ee4aa4484af68ea298e1e2
+      spriteID: 22775ba624d80e14ba59d628e3df6d3f
       vertices: []
       indices: 
       edges: []
@@ -257,7 +262,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bb4caeae345e1d418fbb69157a41d1a
+      spriteID: 6f9d9abe8bdc81745bbc1d3afb07e71c
       vertices: []
       indices: 
       edges: []
@@ -277,7 +282,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe8b5389ca86fa8438b39a564df63fed
+      spriteID: 9a91617194ab08f4d93ae50a17a7cf1a
       vertices: []
       indices: 
       edges: []
@@ -297,7 +302,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ba712fc7e23e9f448f3038a923786b0
+      spriteID: e21ac7421796bc34d99e5b77b3e71767
       vertices: []
       indices: 
       edges: []
@@ -317,7 +322,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20b636572567e6a4eb21f932be18fce6
+      spriteID: 080181e127dfc82458884631681e5d61
       vertices: []
       indices: 
       edges: []
@@ -337,7 +342,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66e81feae6bc4494c9724fe868223ec6
+      spriteID: 0fb7d828e85db5d49b507b7765cd78c8
       vertices: []
       indices: 
       edges: []
@@ -357,7 +362,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f79350eaae54f4382281be1f060b59
+      spriteID: d4853d78542e02b468364ba7ea094a09
       vertices: []
       indices: 
       edges: []
@@ -377,7 +382,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4d834da2595f6340a341597a63ed9e9
+      spriteID: 695d41650131f7440b44fdf16a67f2f7
       vertices: []
       indices: 
       edges: []
@@ -397,7 +402,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac5d95e9d4e37564a905747c189cf941
+      spriteID: 7f5e181525bab5b47a0904de47e83469
       vertices: []
       indices: 
       edges: []
@@ -417,7 +422,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add13e2d95c5dc14fb99ec0ed40ae20c
+      spriteID: 328e75499f248d74bae608379c221efb
       vertices: []
       indices: 
       edges: []
@@ -437,7 +442,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a722c06002c65e4da2dad7cb33a5482
+      spriteID: 64bd5a3e4ec494944950d6ba07f20aa2
       vertices: []
       indices: 
       edges: []
@@ -457,7 +462,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6394738fbd1543e42a3d21371fc24425
+      spriteID: 50930cf6a50fb0746aa8567b3a3302b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flashy_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a11093dfa9810a41b9525e303d30c5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flashy_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afcf03c9ac7eb1d49add2fb8faceb690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flashy_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bf62d2ad17d6f48ac0ea2517aaea91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flashy_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87363ab3b6cfae9428010c8de9b47a3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flashy_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a362c35e70eb0fc48b6a0c7c0190a60c
       vertices: []
       indices: 
       edges: []
