@@ -38,55 +38,33 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
         // Find the nearest dirt tile
         if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.01)
         {
-            var tiles = new List<Vector2>();
+            Vector2 choosenPosition = Vector2.positiveInfinity;
+            float lowestDist = Single.MaxValue;
+
             TilemapUtils.IterateTilemapWithAction(_doodadsBackgroundTilemap, (tilemap, gx, gy, data) =>
             {
                 if (IsDirtTile(data))
-                    tiles.Add(new Vector2(gx, gy));
-            });
-
-            if (tiles.Count != 0)
-            {
-                var toSkip = MathHelper.GetRandomInt(0, tiles.Count);
-                var randPos = tiles.Skip(toSkip).Take(1).First();
-                var gridWorldPos = TilemapUtils.GetGridWorldPos(
-                    _doodadsBackgroundTilemap,
-                    (int) randPos.x,
-                    (int) randPos.y);
-                navMeshAgent2D.destination = gridWorldPos;
-            }
-
-            /*
-            var oldDest = navMeshAgent2D.destination;
-
-            Vector2 nearest = new Vector2();
-            float lowestDistance = Single.MaxValue;
-            TilemapUtils.IterateTilemapWithAction(_doodadsBackgroundTilemap, (tilemap, x, y, tileData) =>
-            {
-                // I only want dirt tiles
-                if (!IsDirtTile(tileData)) return;
-                
-                
-                var worldPosition = TilemapUtils.GetGridWorldPos(x, y, _doodadsBackgroundTilemap.CellSize);
-
-                navMeshAgent2D.destination = worldPosition;
-                if (!navMeshAgent2D.hasPath) return;
-
-                if (navMeshAgent2D.remainingDistance < lowestDistance)
                 {
-                    lowestDistance = navMeshAgent2D.remainingDistance;
-                    nearest = worldPosition;
+                    var gridWorldPos = TilemapUtils.GetGridWorldPos(
+                        _doodadsBackgroundTilemap,
+                        gx,
+                        gy);
+                    var transformPosition = transform.position.magnitude - gridWorldPos.magnitude;
+                    if (transformPosition < lowestDist)
+                    {
+                        lowestDist = transformPosition;
+                        choosenPosition = new Vector2(gx, gy);
+                    }
                 }
             });
-            if (Math.Abs(lowestDistance - Single.MaxValue) > 0.01)
+            if (Math.Abs(lowestDist - Single.MaxValue) > 0.01)
             {
-                navMeshAgent2D.destination = nearest;
+                var gridWorldPos = TilemapUtils.GetGridWorldPos(
+                    _doodadsBackgroundTilemap,
+                    (int) choosenPosition.x,
+                    (int) choosenPosition.y);
+                navMeshAgent2D.destination = gridWorldPos;
             }
-            else
-            {
-                navMeshAgent2D.destination = oldDest;
-            }
-        */
         }
 
 
