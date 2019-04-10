@@ -100,7 +100,6 @@ namespace SpaceShip
             {
                 var flag = GetRandomTileRotationFlag();
 
-                Debug.Log("Place Dirt at " + randomTile.Value);
                 _doodadsBackgroundTilemap.SetTile(
                     randomTile.Value,
                     GetRandomDirtTile(),
