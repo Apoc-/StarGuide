@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using Behaviour;
 using CreativeSpore.SuperTilemapEditor;
 using UnityEngine;
@@ -10,13 +9,13 @@ namespace SpaceShip
 {
     public class SpaceShipEnvironmentTicker : ITickable
     {
+        private readonly List<int> _dirtTiles = new List<int> {64, 96, 128};
+        private readonly STETilemap _doodadsBackgroundTilemap;
         private readonly STETilemap _shipBackgroundTilemap;
 
         private List<Vector2> _dirtiableTiles = new List<Vector2>();
-        private readonly List<int> _dirtTiles = new List<int> {64, 96, 128};
-        private readonly STETilemap _doodadsBackgroundTilemap;
 
-        private int _tickCounter = 0;
+        private int _tickCounter;
 
 
         public SpaceShipEnvironmentTicker()
@@ -37,7 +36,7 @@ namespace SpaceShip
         public void Tick()
         {
             _tickCounter++;
-            if (_tickCounter % 30 == 0)
+            if (_tickCounter % 60 == 0)
             {
                 _tickCounter = 0;
                 TryToPlaceDirt();
@@ -73,13 +72,8 @@ namespace SpaceShip
             {
                 var tileData = _doodadsBackgroundTilemap.GetTileData(tileVector);
                 if (Tileset.k_TileData_Empty == tileData)
-                {
                     freePositions.Add(tileVector);
-                }
-                else if (IsDirtTile(tileData))
-                {
-                    dirtyCount++;
-                }
+                else if (IsDirtTile(tileData)) dirtyCount++;
             }
 
             if (freePositions.Count == 0)
@@ -98,15 +92,15 @@ namespace SpaceShip
 
         private void TryToPlaceDirt()
         {
-
-            if (MathHelper.GetRandomInt(0, 100) < 80)
+            if (MathHelper.GetRandomInt(0, 100) < 95)
                 return;
-            
+
             var randomTile = GetRandomPlaceableTilePosition();
             if (randomTile.HasValue)
             {
                 var flag = GetRandomTileRotationFlag();
 
+                Debug.Log("Place Dirt at " + randomTile.Value);
                 _doodadsBackgroundTilemap.SetTile(
                     randomTile.Value,
                     GetRandomDirtTile(),
@@ -120,20 +114,11 @@ namespace SpaceShip
         private static eTileFlags GetRandomTileRotationFlag()
         {
             eTileFlags flag = 0;
-            if (MathHelper.GetRandomInt(0, 10) > 5)
-            {
-                flag &= eTileFlags.Rot90;
-            }
+            if (MathHelper.GetRandomInt(0, 10) > 5) flag &= eTileFlags.Rot90;
 
-            if (MathHelper.GetRandomInt(0, 10) > 5)
-            {
-                flag &= eTileFlags.FlipH;
-            }
+            if (MathHelper.GetRandomInt(0, 10) > 5) flag &= eTileFlags.FlipH;
 
-            if (MathHelper.GetRandomInt(0, 10) > 5)
-            {
-                flag &= eTileFlags.FlipV;
-            }
+            if (MathHelper.GetRandomInt(0, 10) > 5) flag &= eTileFlags.FlipV;
 
             return flag;
         }
