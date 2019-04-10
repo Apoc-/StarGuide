@@ -644,13 +644,21 @@ MonoBehaviour:
       vertices: []
       type: 0
     paramContainer:
-      m_paramList: []
+      m_paramList:
+      - name: IsRoombaStation
+        _paramType: 1
+        _boolValue: 1
+        _intValue: 0
+        _floatValue: 0
+        _stringValue: 
+        _objectValue: {fileID: 0}
     prefabData:
-      prefab: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      prefab: {fileID: 4287913183485663975, guid: 77627e7617962b848bbf396125d9aaa0,
+        type: 3}
+      offset: {x: 0.551, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
-      offsetMode: 0
-      showTileWithPrefab: 0
+      offsetMode: 1
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:

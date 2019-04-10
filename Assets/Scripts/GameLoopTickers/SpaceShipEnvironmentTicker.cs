@@ -36,7 +36,7 @@ namespace SpaceShip
         public void Tick()
         {
             _tickCounter++;
-            if (_tickCounter % 60 == 0)
+            if (_tickCounter % 30 == 0)
             {
                 _tickCounter = 0;
                 TryToPlaceDirt();
@@ -106,7 +106,7 @@ namespace SpaceShip
                     Tileset.k_BrushId_Default,
                     flag
                 );
-                _doodadsBackgroundTilemap.UpdateMesh();
+                _doodadsBackgroundTilemap.UpdateMeshImmediate();
             }
         }
 
