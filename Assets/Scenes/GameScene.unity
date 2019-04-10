@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 26707753d4870bd4fb7f25708868493a, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &54351660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,7 +3208,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680361663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15, y: 5, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3606,7 +3606,7 @@ GameObject:
   - component: {fileID: 1757713856}
   - component: {fileID: 1757713855}
   m_Layer: 2
-  m_Name: NavTest
+  m_Name: Roomba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3671,7 +3671,7 @@ Animator:
   m_GameObject: {fileID: 1757713854}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0abc62f93d4ca7646b6819edd7003947, type: 2}
+  m_Controller: {fileID: 9100000, guid: 40d7062a461998a4ca39d81ee06b8db4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3717,8 +3717,8 @@ SpriteRenderer:
   m_SortingLayerID: -476497817
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 109572e49ee793442ad4ca5164baf402, type: 3}
-  m_Color: {r: 1, g: 0.9371229, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c2d67ceaf48bde54cbaa76a6a9212ffa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4461,7 +4461,7 @@ MonoBehaviour:
   - {fileID: 1695534675}
   - {fileID: 1189681402}
   - {fileID: 1315405299}
-  m_selectedIndex: 0
+  m_selectedIndex: 3
   m_unselectedColorMultiplier: 1
   m_defaultTilemapWindowVisible: 0
   m_displayTilemapRList: 0
