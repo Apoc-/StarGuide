@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using Behaviour;
 using Behaviour.World;
 using CreativeSpore.SuperTilemapEditor;
@@ -12,32 +13,42 @@ public class DoorBehaviour : MonoBehaviour
     private Collider2D _doorTrigger;
     public STETilemap DoorTilemap;
 
-    private bool _isOpen;
+    private bool IsOpen => CollidersTouchingMe.Count > 0;
 
     private void Start()
     {
         _doorTrigger = GetComponent<Collider2D>();
     }
+    
+    
+    private HashSet<Collider2D> CollidersTouchingMe = new HashSet<Collider2D>();
+    
+    // Destroy everything that enters the trigger
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        var canOpenDoors = other.gameObject.GetComponent<ICanOpenDoors>() != null;
+        if (canOpenDoors && !CollidersTouchingMe.Contains(other))
+        {
+            CollidersTouchingMe.Add(other);
+        }
+    }
+
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (CollidersTouchingMe.Contains(other))
+        {
+            CollidersTouchingMe.Remove(other);
+        }
+    }
 
     void Update()
     {
-        var playerCollider = GameManager.Instance.Player.GetComponent<Collider2D>();
-        
-        if(_doorTrigger.IsTouching(playerCollider))
-        {
-            _isOpen = true;
-        }
-        else
-        {
-            _isOpen = false;
-        }
-
-        SetDoorState(_isOpen);
+        SetDoorState(IsOpen);
     }
 
     void SetDoorState(bool state)
     {
-        
         var bot = DoorLocation;
         var top = new Vector2(bot.x, bot.y + 1);
 
