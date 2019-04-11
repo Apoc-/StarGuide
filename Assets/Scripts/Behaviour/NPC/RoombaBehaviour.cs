@@ -16,8 +16,11 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
 
     private STETilemap _doodadsBackgroundTilemap;
     private STETilemap _doodadsForegroundTilemap;
+    private int _waitingTicks;
     [SerializeField] public int DefaultRoombaCapacity = 10;
     private NavMeshAgent2D navMeshAgent2D;
+
+    private RoombaStationBehaviour TargetStation;
 
 
     // Start is called before the first frame update
@@ -40,16 +43,51 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
     // Update is called once per frame
     private void Update()
     {
-        // Find the nearest dirt tile
-        if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.01 && _currentCapacity == 0)
+        if (_waitingTicks > 0)
         {
-            Debug.Log("Search new Station");
-            GoToNextChargingStation();
-            _currentCapacity = DefaultRoombaCapacity;
+            _waitingTicks--;
+            return;
         }
-        else if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.1 && _currentCapacity > 0)
+
+        HandleSearchDirt();
+        HandleDocking();
+
+
+        CheckForDirtAndCleanIfPossible();
+    }
+
+    private void HandleDocking()
+    {
+        if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.01 && _currentCapacity <= 0)
         {
+            if (TargetStation != null)
+            {
+                // I am at the station.
+                TargetStation.StationaryRoomba = this;
+                _waitingTicks = 60 * 4;
+                _currentCapacity = DefaultRoombaCapacity;
+            }
+            else
+            {
+                // Go to the station
+                Debug.Log("Search new Station");
+                GoToNextChargingStation();
+            }
+        }
+        else if (TargetStation)
+        {
+            TargetStation.StationaryRoomba = null;
+            TargetStation = null;
+        }
+    }
+
+    private void HandleSearchDirt()
+    {
+        if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.1 && _currentCapacity > 0)
+        {
+            // Find the nearest dirt tile
             Debug.Log("Search new Dirt");
+            _waitingTicks = 60;
             var choosenPosition = Vector2.positiveInfinity;
             var lowestDist = float.MaxValue;
 
@@ -77,12 +115,10 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
                     _doodadsBackgroundTilemap,
                     (int) choosenPosition.x,
                     (int) choosenPosition.y);
-                navMeshAgent2D.destination = gridWorldPos;
+                // add 0.25f to y so the roomba is on top of dirt tiles
+                navMeshAgent2D.destination = gridWorldPos + new Vector3(0, 0.25f, 0);
             }
         }
-
-
-        CheckForDirtAndCleanIfPossible();
     }
 
     private void CheckForDirtAndCleanIfPossible()
@@ -120,19 +156,15 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
     private void GoToNextChargingStation()
     {
         var nextStation = FindNextRoombaStation();
-        if (!nextStation.HasValue)
+        if (nextStation == null)
         {
             Debug.Log("No roomba station found!");
             return;
         }
 
-        var gridWorldPos = _doodadsBackgroundTilemap.transform.TransformPoint(
-            new Vector2(
-                (nextStation.Value.x + .5f) * _doodadsBackgroundTilemap.CellSize.x,
-                (nextStation.Value.y + .5f) * _doodadsBackgroundTilemap.CellSize.y
-            )
-        );
-        navMeshAgent2D.destination = gridWorldPos;
+        navMeshAgent2D.destination = nextStation.transform.position - new Vector3(0.5f, 0);
+        Debug.Log("Go to station at " + navMeshAgent2D.destination);
+        TargetStation = nextStation;
     }
 
 
@@ -141,33 +173,36 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
         return _dirtTiles.Contains(Tileset.GetTileIdFromTileData(tileData));
     }
 
-    private Vector2? FindNextRoombaStation()
+    private RoombaStationBehaviour FindNextRoombaStation()
     {
-        var choosenPosition = Vector2.positiveInfinity;
+        RoombaStationBehaviour choosenStation = null;
         var lowestDist = float.MaxValue;
 
         TilemapUtils.IterateTilemapWithAction(_doodadsForegroundTilemap, (tilemap, gx, gy, data) =>
         {
             var tile = tilemap.GetTile(gx, gy);
             if (tile?.paramContainer == null) return;
-            if (tile.paramContainer.GetBoolParam("IsRoombaStation"))
+            if (!tile.paramContainer.GetBoolParam("IsRoombaStation")) return;
+
+
+            var roombaStation = tilemap.GetTileObject(gx, gy).GetComponent<RoombaStationBehaviour>();
+            Debug.Log(roombaStation);
+            if (!roombaStation.CanRoombaDockHere(this)) return;
+
+            var gridWorldPos = TilemapUtils.GetGridWorldPos(
+                _doodadsForegroundTilemap,
+                gx,
+                gy);
+            var transformPosition = transform.position.magnitude - gridWorldPos.magnitude;
+            if (transformPosition < lowestDist)
             {
-                var gridWorldPos = TilemapUtils.GetGridWorldPos(
-                    _doodadsForegroundTilemap,
-                    gx,
-                    gy);
-                var transformPosition = transform.position.magnitude - gridWorldPos.magnitude;
-                if (transformPosition < lowestDist)
-                {
-                    lowestDist = transformPosition;
-                    choosenPosition = new Vector2(gx, gy);
-                }
+                Console.WriteLine("gridWorldPos " + gridWorldPos);
+                Console.WriteLine("roombaStation " + roombaStation.transform);
+                choosenStation = roombaStation;
+                lowestDist = transformPosition;
             }
         });
 
-        if (Math.Abs(lowestDist - float.MaxValue) > 0.01)
-            return choosenPosition;
-
-        return null;
+        return choosenStation;
     }
 }
