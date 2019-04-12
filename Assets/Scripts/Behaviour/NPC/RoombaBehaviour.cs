@@ -48,6 +48,11 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
             _waitingTicks--;
             return;
         }
+        
+        if (navMeshAgent2D.hasPath && Math.Abs(navMeshAgent2D.remainingDistance) < 0.2)
+        {
+            navMeshAgent2D.ResetPath();
+        }
 
         HandleSearchDirt();
         HandleDocking();
@@ -58,7 +63,7 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
 
     private void HandleDocking()
     {
-        if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.01 && _currentCapacity <= 0)
+        if (!navMeshAgent2D.hasPath && _currentCapacity <= 0)
         {
             if (TargetStation != null)
             {
@@ -83,7 +88,7 @@ public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
 
     private void HandleSearchDirt()
     {
-        if (Math.Abs(navMeshAgent2D.remainingDistance) < 0.1 && _currentCapacity > 0)
+        if (!navMeshAgent2D.hasPath && _currentCapacity > 0)
         {
             // Find the nearest dirt tile
             Debug.Log("Search new Dirt");
