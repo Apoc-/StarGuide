@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace Editor
 {
-    public class BuildWindows
+    public class BuildScripts
     {
         [MenuItem("Build/Build Windows")]
-        public static void MyBuild()
+        public static void BuildWindows()
         {
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] { "Assets/Scenes/GameScene.unity" };
