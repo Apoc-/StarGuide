@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Behaviour;
-using CreativeSpore.SuperTilemapEditor;
-using UnityEditor;
+﻿using CreativeSpore.SuperTilemapEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -14,7 +10,5 @@ public class DoorHelperBehaviour : MonoBehaviour
         db.DoorLocation = new Vector2(data.GridX, data.GridY);
         db.DoorTilemap = data.ParentTilemap.ParentTilemapGroup.FindTilemapByName("Doors");
         db.name = $"Door {db.DoorLocation}";
-        
-        EditorUtility.SetDirty(db);
     }
 }
