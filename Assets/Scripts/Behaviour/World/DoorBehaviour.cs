@@ -6,33 +6,54 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class DoorBehaviour : MonoBehaviour
 {
+    private readonly HashSet<Collider2D> CollidersTouchingMe = new HashSet<Collider2D>();
     private Collider2D _doorTrigger;
     private bool _oldState = true;
 
-    private readonly HashSet<Collider2D> CollidersTouchingMe = new HashSet<Collider2D>();
+    [Header("These values are set by the tilemap.")]
     public Vector2 DoorLocation;
+
     public STETilemap DoorTilemap;
 
-    public int WallTileId = 40;
-    public int FloorTileId = 72;
+    
+    public bool Locked;
 
-    public int LockedWallTileId = 39;
+    [Header("The tile IDs for the sprites that should be placed.")]
+    public int DoorHolderTile = 11;
+    [Space(10)]
     public int LockedFloorTileId = 71;
-
-    public int OpenWallTileId = 41;
+    public int LockedWallTileId = 39;
+    [Space(10)]
     public int OpenFloorTileId = 73;
+    public int OpenWallTileId = 41;
+    [Space(10)]
+    public int FloorTileId = 72;
+    public int WallTileId = 40;
 
-    public bool Locked = false;
+    [Header("Used to determine whether the sprites must be mirrored or not.")]
+    public bool InvertTiles;
 
     private bool IsOpen => CollidersTouchingMe.Count > 0;
 
     private void Start()
     {
         _doorTrigger = GetComponent<Collider2D>();
-        
-        DoorTilemap.ParentTilemapGroup
-            .FindTilemapByName("ShipForeground")
-            .SetTile(DoorLocation, 11);
+
+        PlaceDoorHolder();
+    }
+
+    private void PlaceDoorHolder()
+    {
+        var tilemap = DoorTilemap.ParentTilemapGroup
+            .FindTilemapByName("ShipForeground");
+        tilemap.SetTile(DoorLocation, DoorHolderTile);
+        if (InvertTiles)
+            SetFlipForTile(tilemap, DoorLocation);
+    }
+
+    private void SetFlipForTile(STETilemap tilemap, Vector2 pos)
+    {
+        tilemap.SetTileData(pos, DoorTilemap.GetTileData(pos) | Tileset.k_TileFlag_FlipH);
     }
 
     // Destroy everything that enters the trigger
@@ -79,6 +100,12 @@ public class DoorBehaviour : MonoBehaviour
 
         DoorTilemap.SetTile(bot, tileTop);
         DoorTilemap.SetTile(top, tileBot);
+
+        if (InvertTiles)
+        {
+            SetFlipForTile(DoorTilemap, bot);
+            SetFlipForTile(DoorTilemap, top);
+        }
 
         _oldState = state;
         DoorTilemap.UpdateMeshImmediate();

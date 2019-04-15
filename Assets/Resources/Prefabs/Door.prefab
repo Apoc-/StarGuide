@@ -71,8 +71,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af26d80cf4ca2b44ab022140e8a3563e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorLocation: {x: -8, y: 2}
+  DoorHolderTile: 11
+  DoorLocation: {x: -137, y: -1337}
   DoorTilemap: {fileID: 0}
+  FloorTileId: 72
+  InvertTiles: 1
+  Locked: 0
+  LockedFloorTileId: 71
+  LockedWallTileId: 39
+  OpenFloorTileId: 73
+  OpenWallTileId: 41
+  WallTileId: 40
 --- !u!114 &6347363430458714648
 MonoBehaviour:
   m_ObjectHideFlags: 0
