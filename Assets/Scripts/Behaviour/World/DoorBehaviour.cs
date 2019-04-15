@@ -13,11 +13,26 @@ public class DoorBehaviour : MonoBehaviour
     public Vector2 DoorLocation;
     public STETilemap DoorTilemap;
 
+    public int WallTileId = 40;
+    public int FloorTileId = 72;
+
+    public int LockedWallTileId = 39;
+    public int LockedFloorTileId = 71;
+
+    public int OpenWallTileId = 41;
+    public int OpenFloorTileId = 73;
+
+    public bool Locked = false;
+
     private bool IsOpen => CollidersTouchingMe.Count > 0;
 
     private void Start()
     {
         _doorTrigger = GetComponent<Collider2D>();
+        
+        DoorTilemap.ParentTilemapGroup
+            .FindTilemapByName("ShipForeground")
+            .SetTile(DoorLocation, 11);
     }
 
     // Destroy everything that enters the trigger
@@ -37,7 +52,6 @@ public class DoorBehaviour : MonoBehaviour
     {
         if (!Application.isPlaying) return;
 
-
         SetDoorState(IsOpen);
     }
 
@@ -46,19 +60,25 @@ public class DoorBehaviour : MonoBehaviour
         if (state == _oldState)
             return;
 
-        var bot = DoorLocation;
-        var top = new Vector2(bot.x, bot.y + 1);
+        var top = DoorLocation;
+        var bot = new Vector2(top.x, top.y + 1);
 
-        if (!state)
+        var tileTop = WallTileId; // Default is closed
+        var tileBot = FloorTileId;
+
+        if (Locked)
         {
-            DoorTilemap.SetTile(bot, 199);
-            DoorTilemap.SetTile(top, 167);
+            tileTop = LockedWallTileId;
+            tileBot = LockedFloorTileId;
         }
-        else
+        else if (state)
         {
-            DoorTilemap.Erase(bot);
-            DoorTilemap.Erase(top);
+            tileTop = OpenWallTileId;
+            tileBot = OpenFloorTileId;
         }
+
+        DoorTilemap.SetTile(bot, tileTop);
+        DoorTilemap.SetTile(top, tileBot);
 
         _oldState = state;
         DoorTilemap.UpdateMeshImmediate();
