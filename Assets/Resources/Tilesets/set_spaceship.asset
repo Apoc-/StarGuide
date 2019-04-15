@@ -202,15 +202,16 @@ MonoBehaviour:
       - {x: 0, y: 1}
       - {x: 1, y: 1}
       - {x: 1, y: 0.75}
-      type: 2
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -225,15 +226,16 @@ MonoBehaviour:
       - {x: 0, y: 1}
       - {x: 1, y: 1}
       - {x: 1, y: 0.75}
-      type: 2
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -247,16 +249,17 @@ MonoBehaviour:
       - {x: 0, y: 0.75}
       - {x: 0, y: 1}
       - {x: 1, y: 1}
-      - {x: 0.8125, y: 0.75}
-      type: 2
+      - {x: 1, y: 0.75}
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -267,19 +270,20 @@ MonoBehaviour:
       height: 0.03125
     collData:
       vertices:
-      - {x: 0.1875, y: 0.75}
+      - {x: 0, y: 0.75}
       - {x: 0, y: 1}
       - {x: 1, y: 1}
-      - {x: 0.8125, y: 0.75}
-      type: 2
+      - {x: 1, y: 0.75}
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -941,8 +945,7 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -965,8 +968,7 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -980,17 +982,12 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices:
-      - {x: 0.3125, y: 0}
-      - {x: 0.3125, y: 1}
-      - {x: 0.6875, y: 1}
-      - {x: 0.6875, y: 0}
-      type: 2
+      vertices: []
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -1004,17 +1001,12 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices:
-      - {x: 0.3125, y: 0}
-      - {x: 0.3125, y: 1}
-      - {x: 0.6875, y: 1}
-      - {x: 0.6875, y: 0}
-      type: 2
+      vertices: []
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -1636,8 +1628,12 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices: []
-      type: 0
+      vertices:
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 1, y: 0}
+      type: 2
     paramContainer:
       m_paramList: []
     prefabData:
@@ -1645,7 +1641,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -1664,7 +1660,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -1683,7 +1679,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -1702,7 +1698,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -2320,12 +2316,8 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices:
-      - {x: 0.1875, y: 0.75}
-      - {x: 0, y: 1}
-      - {x: 1, y: 1}
-      - {x: 1, y: 0.75}
-      type: 2
+      vertices: []
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
@@ -2333,7 +2325,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -2343,12 +2335,8 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices:
-      - {x: 0, y: 0.75}
-      - {x: 0, y: 1}
-      - {x: 1, y: 1}
-      - {x: 1, y: 0.75}
-      type: 2
+      vertices: []
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
@@ -2356,7 +2344,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -2366,12 +2354,8 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices:
-      - {x: 0, y: 0.75}
-      - {x: 0, y: 1}
-      - {x: 1, y: 1}
-      - {x: 0.8125, y: 0.75}
-      type: 2
+      vertices: []
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
@@ -2379,7 +2363,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -2389,12 +2373,8 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices:
-      - {x: 0.1875, y: 0.75}
-      - {x: 0, y: 1}
-      - {x: 1, y: 1}
-      - {x: 0.8125, y: 0.75}
-      type: 2
+      vertices: []
+      type: 0
     paramContainer:
       m_paramList: []
     prefabData:
@@ -2402,7 +2382,7 @@ MonoBehaviour:
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -2539,7 +2519,7 @@ MonoBehaviour:
       height: 0.03125
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -3029,8 +3009,7 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -3049,8 +3028,7 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -3069,8 +3047,7 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -3089,8 +3066,7 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
@@ -8039,12 +8015,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 1
+      showTileWithPrefab: 0
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -8059,12 +8034,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 1
+      showTileWithPrefab: 0
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -8079,12 +8053,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 1
+      showTileWithPrefab: 0
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
@@ -8099,12 +8072,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 9003672258520407072, guid: 883d792de7915784687ec542978527d5,
-        type: 3}
+      prefab: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 1
+      showTileWithPrefab: 0
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
