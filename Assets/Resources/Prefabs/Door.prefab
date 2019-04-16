@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
@@ -71,17 +71,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af26d80cf4ca2b44ab022140e8a3563e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorHolderTile: 11
   DoorLocation: {x: -137, y: -1337}
   DoorTilemap: {fileID: 0}
-  FloorTileId: 72
-  InvertTiles: 1
   Locked: 0
+  DoorHolderTile: 11
   LockedFloorTileId: 71
   LockedWallTileId: 39
   OpenFloorTileId: 73
   OpenWallTileId: 41
+  FloorTileId: 72
   WallTileId: 40
+  InvertTiles: 1
 --- !u!114 &6347363430458714648
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ public class DoorBehaviour : MonoBehaviour
     [Header("Used to determine whether the sprites must be mirrored or not.")]
     public bool InvertTiles;
 
-    private bool IsOpen => CollidersTouchingMe.Count > 0;
+    public bool IsOpen => CollidersTouchingMe.Count > 0;
 
     private void Start()
     {
