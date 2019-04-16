@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using Behaviour.Player;
+using Behaviour.World.Transport;
 using CreativeSpore.SuperTilemapEditor;
 using DataModel;
 using SpaceShip;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements.StyleEnums;
 
 namespace Behaviour
 {
@@ -21,13 +23,13 @@ namespace Behaviour
         private void Start()
         {
             GameState = new GameState();
-            
+
             InitializeSpaceShip();
             InitializeGalaxy();
 
             RegisterTickables();
             RegisterStartables();
-            
+
             GameState.Inialized = true;
         }
 
@@ -45,7 +47,7 @@ namespace Behaviour
         private void FixedUpdate()
         {
             if (!GameState.Inialized) return;
-            
+
             _tickables.ForEach(tickable => tickable.Tick());
         }
 
@@ -53,7 +55,7 @@ namespace Behaviour
         {
             var galaxyData = new GalaxyData();
             galaxyData.Name = "Sefardim";
-            
+
             var ssg = new StarSystemGenerator(galaxyData);
             var starSystem = ssg.GenerateStarSystem(GameState.PlayerData.SpaceShipData.GridPosition);
 
@@ -85,8 +87,17 @@ namespace Behaviour
 
             GameState.PlayerData = playerData;
         }
-        
+
+        public List<AbstractTransportInteractible> TransportInteractibles = new List<AbstractTransportInteractible>();
+
+        public void AddTransportInteractible(AbstractTransportInteractible transport)
+        {
+            TransportInteractibles.Add(transport);
+        }
+
+
         #region singleton
+
         private static GameManager _instance;
 
         public static GameManager Instance
@@ -98,9 +109,11 @@ namespace Behaviour
                     _instance = FindObjectOfType<GameManager>();
                     DontDestroyOnLoad(_instance);
                 }
+
                 return _instance;
             }
         }
+
         #endregion
     }
 }
