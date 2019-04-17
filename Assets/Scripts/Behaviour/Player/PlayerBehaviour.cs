@@ -1,11 +1,12 @@
 using Assets.Scripts;
+using Behaviour.NPC;
 using DataModel;
 using UnityEngine;
 
 namespace Behaviour.Player
 {
     [RequireComponent(typeof(PlayerInputController))]
-    public class PlayerBehaviour : MonoBehaviour, ICanOpenDoors
+    public class PlayerBehaviour : MonoBehaviour, ICanOpenDoors, IEntity
     {
         public PlayerInputController InputController { get; private set; }
 
