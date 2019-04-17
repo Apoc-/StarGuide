@@ -7,11 +7,6 @@ namespace Behaviour.World
 {
     public class LiftInteractible : AbstractTransportInteractible
     {
-      
-
-        [Header("The relative tile position of the edges of this room.")]
-        public Vector2 TopLeftTile;
-        public Vector2 BottomRightTile;
         [Header("A list of all doors leading to this lift.")]
         public List<DoorBehaviour> Doors;
 
@@ -24,9 +19,7 @@ namespace Behaviour.World
             base.Start();
 
             Debug.Assert(Doors != null && Doors.Count > 0, "Must have at least one door!");
-//            Debug.Assert(Doors.Any(door => door == null), "Door references must not be zero.");
-            
-            
+            Debug.Assert(Doors.Count(door => door == null) == 0, "Door references must not be zero.");
             GameManager.Instance.AddTransportInteractible(this);
         }
 
