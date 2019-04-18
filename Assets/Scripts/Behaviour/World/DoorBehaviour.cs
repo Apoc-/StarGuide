@@ -53,7 +53,7 @@ public class DoorBehaviour : MonoBehaviour
 
     private void SetFlipForTile(STETilemap tilemap, Vector2 pos)
     {
-        tilemap.SetTileData(pos, DoorTilemap.GetTileData(pos) | Tileset.k_TileFlag_FlipH);
+        tilemap.SetTileData(pos, tilemap.GetTileData(pos) | Tileset.k_TileFlag_FlipH);
     }
 
     // Destroy everything that enters the trigger

@@ -102,5 +102,20 @@ PrefabInstance:
       propertyPath: DoorHolderTile
       value: 138
       objectReference: {fileID: 0}
+    - target: {fileID: 9003672258520407077, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003672258520407077, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003672258520407077, guid: 883d792de7915784687ec542978527d5,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 883d792de7915784687ec542978527d5, type: 3}

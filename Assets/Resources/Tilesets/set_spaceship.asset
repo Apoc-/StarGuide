@@ -703,8 +703,12 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices: []
-      type: 0
+      vertices:
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 0, y: 0.75}
+      - {x: 1, y: 0.75}
+      type: 2
     paramContainer:
       m_paramList: []
     prefabData:
@@ -722,8 +726,12 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices: []
-      type: 0
+      vertices:
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 0, y: 0.75}
+      - {x: 1, y: 0.75}
+      type: 2
     paramContainer:
       m_paramList: []
     prefabData:
@@ -741,8 +749,12 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices: []
-      type: 0
+      vertices:
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 0, y: 0.75}
+      - {x: 1, y: 0.75}
+      type: 2
     paramContainer:
       m_paramList: []
     prefabData:
@@ -760,16 +772,21 @@ MonoBehaviour:
       width: 0.03125
       height: 0.03125
     collData:
-      vertices: []
-      type: 0
+      vertices:
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 0, y: 0.75}
+      - {x: 1, y: 0.75}
+      type: 2
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 2357198578228830666, guid: 1ddb20b357db42a488289a7c9de0922f,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
