@@ -41,7 +41,6 @@ namespace Behaviour
         private void RegisterTickables()
         {
             _tickables.Add(new SpaceShipTicker());
-            _tickables.Add(new SpaceShipEnvironmentTicker());
         }
 
         private void FixedUpdate()

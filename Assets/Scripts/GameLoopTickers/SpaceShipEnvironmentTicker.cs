@@ -18,17 +18,11 @@ namespace SpaceShip
         private int _tickCounter;
 
 
-        public SpaceShipEnvironmentTicker()
+        public SpaceShipEnvironmentTicker(TilemapGroup shipTilemapGroup)
         {
-            _doodadsBackgroundTilemap = GameManager.Instance
-                .ShipTilemapGroup
-                .Tilemaps
-                .First(tilemap => tilemap.name == "DoodadsBackground");
+            _doodadsBackgroundTilemap = shipTilemapGroup.Tilemaps.First(tilemap => tilemap.name == "DoodadsBackground");
 
-            _shipBackgroundTilemap = GameManager.Instance
-                .ShipTilemapGroup
-                .Tilemaps
-                .First(tilemap => tilemap.name == "ShipBackground");
+            _shipBackgroundTilemap = shipTilemapGroup.Tilemaps.First(tilemap => tilemap.name == "ShipBackground");
 
             SetDirtiableTiles();
         }
