@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Behaviour.NPC.Roomba
 {
-    public class RoombaBehaviour : MonoBehaviour, ICanOpenDoors
+    public class RoombaBehaviour : EntityBehaviour, ICanOpenDoors
     {
         // TODO: Use the list from SpaceShipEnvironmentTicker
         private readonly List<int> _dirtTiles = new List<int> {64, 96, 128};

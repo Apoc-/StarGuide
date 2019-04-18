@@ -6,23 +6,23 @@ namespace Behaviour.World
 {
     public class EntityCheckerBehaviour : MonoBehaviour
     {
-        public readonly HashSet<GameObject> ContainedEntities = new HashSet<GameObject>();
+        public readonly HashSet<EntityBehaviour> ContainedEntities = new HashSet<EntityBehaviour>();
 
-        private void OnTriggerEnter2D(Collider2D e)
+        private void OnTriggerEnter2D(Collider2D collider)
         {
-            var component = e.gameObject.GetComponent<IEntity>();
-            if (component != null)
+            var entity = collider.gameObject.GetComponent<EntityBehaviour>();
+            if (entity != null)
             {
-                ContainedEntities.Add(e.gameObject);
+                ContainedEntities.Add(entity);
             }
         }
 
-        private void OnTriggerExit2D(Collider2D e)
+        private void OnTriggerExit2D(Collider2D collider)
         {
-            var component = e.gameObject.GetComponent<IEntity>();
-            if (component != null)
+            var entity = collider.gameObject.GetComponent<EntityBehaviour>();
+            if (entity != null)
             {
-                ContainedEntities.Remove(e.gameObject);
+                ContainedEntities.Remove(entity);
             }
         }
     }
