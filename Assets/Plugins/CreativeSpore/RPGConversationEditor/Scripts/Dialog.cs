@@ -13,7 +13,10 @@ namespace CreativeSpore.RPGConversationEditor
     public class Dialog
     {
         public const string k_defaultText = "Enter Text...";
-        public int id { get { return m_id; } }
+        public int id { 
+            get { return m_id; }
+            set { m_id = value; }
+        }
         public Vector2 position { get { return rect.center; } set { rect.center = value; } }
         public float width { get { return rect.width; } }
         public float height { get { return rect.height; } }

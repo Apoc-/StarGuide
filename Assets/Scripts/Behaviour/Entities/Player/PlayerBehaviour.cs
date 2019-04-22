@@ -6,13 +6,22 @@ using UnityEngine;
 namespace Behaviour.Player
 {
     [RequireComponent(typeof(PlayerInputController))]
-    public class PlayerBehaviour : EntityBehaviour, ICanOpenDoors 
+    public class PlayerBehaviour : EntityBehaviour, ICanOpenDoors
     {
-        public PlayerInputController InputController { get; private set; }
+        private PlayerInputController _inputController;
 
-        private void Start()
+        public PlayerInputController InputController
         {
-            InputController = GetComponent<PlayerInputController>();
+            get
+            {
+                if (_inputController == null)
+                {
+                    _inputController = GetComponent<PlayerInputController>();
+                }
+
+                return _inputController;
+
+            }
         }
     }
 }

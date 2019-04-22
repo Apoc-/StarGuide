@@ -24,6 +24,8 @@ namespace Behaviour
         private WorkInteractible currentWorkstation;
         private bool _isWorking = false;
 
+        public bool CanMove { get; set; } = true;
+
         void Start()
         {
             _animController = GetComponent<Animator>();
@@ -32,7 +34,7 @@ namespace Behaviour
         
         private void Update()
         {
-            if (!_isSitting && !_isWorking)
+            if (CanMove && !_isSitting && !_isWorking)
             {
                 HandleMovementInput();
             }
@@ -54,6 +56,17 @@ namespace Behaviour
             }
         }
 
+        public void FreezePlayerMovement()
+        {
+            StopPlayerMovement();
+            CanMove = false;
+        }
+        
+        public void UnfreezePlayerMovement()
+        {
+            CanMove = true;
+        }
+        
         public void SitDown(ChairInteractible chairInteractible)
         {
             currentChair = chairInteractible;

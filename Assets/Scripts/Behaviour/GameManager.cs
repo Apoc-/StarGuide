@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using Behaviour.Player;
+using Behaviour.World;
 using Behaviour.World.Transport;
 using CreativeSpore.SuperTilemapEditor;
 using DataModel;
 using SpaceShip;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements.StyleEnums;
 
@@ -15,22 +17,48 @@ namespace Behaviour
         public PlayerBehaviour Player;
         public TilemapGroup ShipTilemapGroup;
         public GameObject ConsoleComputer;
+        public GameObject ShipsGameObject;
         public GameState GameState { get; private set; }
 
         private List<ITickable> _tickables = new List<ITickable>();
         public Dictionary<string, IStartable> Startables { get; } = new Dictionary<string, IStartable>();
 
+        private List<ShipBehaviour> _ships = new List<ShipBehaviour>();
+        
         private void Start()
         {
             GameState = new GameState();
 
-            InitializeSpaceShip();
-            InitializeGalaxy();
+            InitializeSpaceShipData();
+            InitializeGalaxyData();
 
+            InitializeSpaceShipBehaviours();
+            InitializeLiftDialogs();
+            
             RegisterTickables();
             RegisterStartables();
 
             GameState.Inialized = true;
+        }
+
+        private void InitializeLiftDialogs()
+        {
+            _ships.ForEach(ship =>
+            {
+                var lifts = ship.Decks.SelectMany(pair => pair.Value).SelectMany(deck => deck.Lifts);
+                foreach (var liftBehaviour in lifts)
+                {
+                    if (liftBehaviour.IsSupportLift) continue;
+                    
+                    liftBehaviour.BuildLiftControlDialog();
+                }
+            });
+        }
+
+        private void InitializeSpaceShipBehaviours()
+        {
+            _ships = ShipsGameObject.GetComponentsInChildren<ShipBehaviour>().ToList();
+            _ships.ForEach(ship => ship.Initialize());
         }
 
         private void RegisterStartables()
@@ -43,6 +71,7 @@ namespace Behaviour
             _tickables.Add(new SpaceShipTicker());
         }
 
+
         private void FixedUpdate()
         {
             if (!GameState.Inialized) return;
@@ -50,7 +79,7 @@ namespace Behaviour
             _tickables.ForEach(tickable => tickable.Tick());
         }
 
-        private void InitializeGalaxy()
+        private void InitializeGalaxyData()
         {
             var galaxyData = new GalaxyData();
             galaxyData.Name = "Sefardim";
@@ -73,7 +102,7 @@ namespace Behaviour
             ConsoleComputer.gameObject.SetActive(true);
         }
 
-        private void InitializeSpaceShip()
+        private void InitializeSpaceShipData()
         {
             var spaceShip = new SpaceShipData();
             spaceShip.Name = "SGS Mijago";
@@ -86,14 +115,6 @@ namespace Behaviour
 
             GameState.PlayerData = playerData;
         }
-
-        public List<AbstractTransportInteractible> TransportInteractibles = new List<AbstractTransportInteractible>();
-
-        public void AddTransportInteractible(AbstractTransportInteractible transport)
-        {
-            TransportInteractibles.Add(transport);
-        }
-
 
         #region singleton
 
