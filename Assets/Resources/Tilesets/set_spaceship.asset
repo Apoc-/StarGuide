@@ -3703,11 +3703,12 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      prefab: {fileID: 3428058499444104223, guid: 5fe59580df5bc5644af358a487a58f35,
+        type: 3}
+      offset: {x: 0.5, y: 0.5, z: 0}
       rotation: {x: 0, y: 0, z: 0}
-      offsetMode: 0
-      showTileWithPrefab: 0
+      offsetMode: 1
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 0
   - uv:
