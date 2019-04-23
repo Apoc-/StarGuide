@@ -19,6 +19,11 @@ public class DeckBehaviour : MonoBehaviour, IInitializable
     private List<ITickable> _tickables = new List<ITickable>();
     public List<LiftBehaviour> Lifts { get; } = new List<LiftBehaviour>();
 
+    void Start()
+    {
+        TilemapGroup = GetComponent<TilemapGroup>();
+    }
+    
     // Update is called once per frame
     void Update()
     {
