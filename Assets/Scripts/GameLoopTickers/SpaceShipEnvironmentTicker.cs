@@ -9,7 +9,7 @@ namespace SpaceShip
 {
     public class SpaceShipEnvironmentTicker : ITickable
     {
-        private readonly List<int> _dirtTiles = new List<int> {64, 96, 128};
+        private readonly List<int> _dirtTiles = new List<int> {3, 35, 67};
         private readonly STETilemap _doodadsBackgroundTilemap;
         private readonly STETilemap _shipBackgroundTilemap;
 

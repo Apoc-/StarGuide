@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3539b2508428d264e86f4d5d56055574, type: 3}
   m_Name: brush_monitor_sine
   m_EditorClassIdentifier: 
-  Tileset: {fileID: 11400000, guid: cebb179e4018827489278762bf9722ae, type: 2}
+  Tileset: {fileID: 11400000, guid: 59b8d7c434ee72a4088aa2a0e0dcd434, type: 2}
   Params:
     m_paramList: []
   m_group: 0
@@ -21,15 +21,15 @@ MonoBehaviour:
   AnimFPS: 4
   AnimDelay: 0
   AnimFrames:
-  - tileId: 224
+  - tileId: 320
     UVOffset: {x: 0, y: 0}
-  - tileId: 225
+  - tileId: 352
     UVOffset: {x: 0, y: 0}
-  - tileId: 226
+  - tileId: 384
     UVOffset: {x: 0, y: 0}
-  - tileId: 227
+  - tileId: 416
     UVOffset: {x: 0, y: 0}
-  - tileId: 228
+  - tileId: 448
     UVOffset: {x: 0, y: 0}
-  - tileId: 229
+  - tileId: 480
     UVOffset: {x: 0, y: 0}

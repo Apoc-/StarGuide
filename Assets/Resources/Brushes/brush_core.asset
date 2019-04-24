@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3539b2508428d264e86f4d5d56055574, type: 3}
   m_Name: brush_core
   m_EditorClassIdentifier: 
-  Tileset: {fileID: 11400000, guid: cebb179e4018827489278762bf9722ae, type: 2}
+  Tileset: {fileID: 11400000, guid: 59b8d7c434ee72a4088aa2a0e0dcd434, type: 2}
   Params:
     m_paramList: []
   m_group: 0
@@ -21,29 +21,29 @@ MonoBehaviour:
   AnimFPS: 3
   AnimDelay: 0
   AnimFrames:
-  - tileId: 450
+  - tileId: 321
     UVOffset: {x: 0, y: 0}
-  - tileId: 482
+  - tileId: 353
     UVOffset: {x: 0, y: 0}
-  - tileId: 514
+  - tileId: 385
     UVOffset: {x: 0, y: 0}
-  - tileId: 546
+  - tileId: 417
     UVOffset: {x: 0, y: 0}
-  - tileId: 578
+  - tileId: 449
     UVOffset: {x: 0, y: 0}
-  - tileId: 610
+  - tileId: 481
     UVOffset: {x: 0, y: 0}
-  - tileId: 642
+  - tileId: 513
     UVOffset: {x: 0, y: 0}
-  - tileId: 674
+  - tileId: 545
     UVOffset: {x: 0, y: 0}
-  - tileId: 706
+  - tileId: 577
     UVOffset: {x: 0, y: 0}
-  - tileId: 738
+  - tileId: 609
     UVOffset: {x: 0, y: 0}
-  - tileId: 770
+  - tileId: 641
     UVOffset: {x: 0, y: 0}
-  - tileId: 802
+  - tileId: 673
     UVOffset: {x: 0, y: 0}
-  - tileId: 834
+  - tileId: 705
     UVOffset: {x: 0, y: 0}

@@ -10,7 +10,7 @@ namespace Behaviour.NPC.Roomba
     public class RoombaBehaviour : EntityBehaviour, ICanOpenDoors
     {
         // TODO: Use the list from SpaceShipEnvironmentTicker
-        private readonly List<int> _dirtTiles = new List<int> {64, 96, 128};
+        private readonly List<int> _dirtTiles = new List<int> {3, 35, 67};
 
         // Capacity of this roomba. If 0, it is full and must be emptied.
         private int _currentCapacity;
